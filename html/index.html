@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="google" content="notranslate" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Phần bón cà mau" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=6.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Phần bón cà mau</title>
+  <meta name="description" content="Phần bón cà mau" />
+  <meta name="keywords" content="Phần bón cà mau" />
+  <meta property="og:title" content="Phần bón cà mau" />
+  <meta property="og:description" content="Phần bón cà mau" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/social-sharing.jpg" />
+  <meta property="og:site_name" content="Phần bón cà mau" />
+  <meta property="og:url" content="index.html" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Phần bón cà mau" />
+  <meta name="theme-color" content="#f8f7fc" />
+  <link rel="icon" href="images/favicon.png" />
+  <link href="css/reset.css" rel="stylesheet" rel="preload" as="style" />
+  <link href="css/swiper.min.css" rel="stylesheet" rel="preload" as="style" />
+  <link href="css/styles.css" rel="stylesheet" rel="preload" as="style" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inr">
+      <div class="header-left">
+        <h1 class="hide-label logo">
+          <a class="pic" href="/">
+            <img width="333" height="85" src="images/logo.png" alt="Phân bón cà mau, hạt ngọc mùa vàng" />
+          </a>
+          Phân bón cà mau, hạt ngọc mùa vàng
+        </h1>
+        <ul class="nav">
+          <li class="nav-active" data-nav="win">Mùa Vàng <br />Thắng Lớn</li>
+          <li data-nav="condition">Thể lệ</li>
+          <li data-nav="livestream">Lịch <br />Livestream</li>
+          <li data-nav="results">Kết quả <br />trúng thưởng</li>
+          <li data-nav="faqs">Câu hỏi thường gặp</li>
+          <li data-nav="news">Tin tức</li>
+        </ul>
+      </div>
+
+      <div class="header-right">
+        <div class="sp menu-toggle"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="section win scrollBy" data-nav="win">
+      <div class="banner-full">
+        <picture>
+          <source media="(min-width:1024px)" srcset="images/win2.jpg" />
+          <source media="(max-width:1023px)" srcset="images/win-sp.jpg" />
+          <img width="1920" height="1273" src="win.jpg" alt="Quay vui có thưởng" />
+        </picture>
+      </div>
+
+      <div class="pic slogan">
+        <img width="370" height="198" src="images/slogan.png" alt="Mưa vàng thắng lớn 2023" />
+      </div>
+
+      <div class="lucky">
+        <div class="lucky-box">
+          <img class="spin roulette" width="640" height="640" src="images/spin.png" alt="Spin" />
+          <img class="spin-overlay" width="640" height="640" src="images/spin-overlay.png" alt="Spin Overlay" />
+          <img class="spin-arrow" width="72" height="166" src="images/spin-arrow.png" alt="Spin Arrow" />
+          <img class="spin-start" id="luckyPlay" width="204" height="204" src="images/spin-start.png"
+            alt="Spin Start" />
+        </div>
+      </div>
+
+      <div class="pic product-main">
+        <img width="550" height="308" src="images/product.png" alt="Cà mau NPK" />
+      </div>
+
+      <div class="form-box">
+        <div class="form-inr">
+          <h2 class="green">QUAY VUI CÓ THƯỞNG</h2>
+
+          <div class="form-brief">
+            Bà con hãy điền thông tin và <strong>QUAY NGAY</strong> để rinh
+            liền tay các phần quà thiết thực và giá trị từ Phân bón Cà Mau
+            như: Điện thoại Samsung; Áo thun; Nón báo hiểm; Dù cầm tay; Áo
+            mưa; Sạc dự phòng; Bình giữ nhiệt.
+          </div>
+
+          <div class="form-note">
+            Lưu ý: Kiểm tra kỹ thông tin chính xác trước khi quay. Quà sẽ được
+            Phân Bón Cà Mau gửi theo thông tin Quý khách hàng cung cấp và
+            KHÔNG thay đổi vì bất kỳ lý do nào.
+            <br /><i>*** Vòng quay sẽ kết thúc ngay sau khi hết quà tặng</i>
+          </div>
+
+          <form action="javascript:void(0)">
+            <div class="form-group">
+              <input type="text" class="input-txt" id="userName" name="userName" placeholder="Họ và tên" value=""
+                autocomplete="off" />
+              <span class="error">Tên không được để trống và có số</span>
+            </div>
+            <div class="form-group">
+              <input type="number" class="input-txt" id="phoneNumber" name="phoneNumber" placeholder="Số điện thoại"
+                value="" autocomplete="off" />
+              <span class="error">Số điện thoại không được rỗng và 10->12 số</span>
+            </div>
+
+            <div class="form-group">
+              <div class="dropdown" id="citySelect">
+                <div class="dropdown-toggle">
+                  <span>Tỉnh/Thành phố</span>
+                  <img class="dropdown-icon" width="24" height="24" src="images/arrow-down.png" alt="icon" />
+                </div>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li data-value="none" class="selected">Tỉnh/Thành phố</li>
+                    <li data-value="1">Hà Nội</li>
+                    <li data-value="2">Hồ Chí Minh</li>
+                    <li data-value="3">Bình Dương</li>
+                    <li data-value="4">Đồng Nai</li>
+                  </ul>
+                </div>
+              </div>
+              <span class="error">Bạn phải chọn Tỉnh/Thành phố</span>
+            </div>
+
+            <div class="form-group">
+              <div class="form-col size6">
+                <div class="dropdown" id="districtSelect">
+                  <div class="dropdown-toggle">
+                    <span>Quận/Huyện</span>
+                    <img class="dropdown-icon" width="24" height="24" src="images/arrow-down.png" alt="icon" />
+                  </div>
+                  <div class="dropdown-menu"></div>
+                </div>
+                <span class="error">Bạn phải chọn Quận/Huyện</span>
+              </div>
+              <div class="form-col size6">
+                <div class="dropdown" id="townSelect">
+                  <div class="dropdown-toggle">
+                    <span>Phường xã</span>
+                    <img class="dropdown-icon" width="24" height="24" src="images/arrow-down.png" alt="icon" />
+                  </div>
+                  <div class="dropdown-menu"></div>
+                </div>
+                <span class="error">Bạn phải chọn Phường xã</span>
+              </div>
+            </div>
+            <div class="form-group form-line"><span></span></div>
+            <p class="form-mention">
+              Vui lòng thực hiện phép tính dưới đây để chứng minh bạn không
+              phải là robot
+            </p>
+            <div class="form-group">
+              <div class="form-col size4">
+                <input type="text" class="input-txt input-txt__large" readonly id="robotQuestion" name="robotQuestion"
+                  value="6 + 99" autocomplete="off" />
+              </div>
+              <div class="form-col size8">
+                <input type="number" class="input-txt" placeholder="Nhập kết quả" id="robotAnswer" name="robotAnswer"
+                  value="" autocomplete="off" />
+                <div class="number-actions">
+                  <img class="dropdown-icon increase-number" width="24" height="24" src="images/arrow-up.png"
+                    alt="icon" />
+                  <img class="dropdown-icon decrease-number" width="24" height="24" src="images/arrow-down.png"
+                    alt="icon" />
+                </div>
+                <span class="error">Kết quả chưa đúng</span>
+              </div>
+            </div>
+            <div class="form-group form-support">
+              <div class="support-link">
+                Hướng dẫn tham gia Quay Vui Có Thưởng
+              </div>
+            </div>
+            <div class="buts">
+              <button type="button" disabled class="but" id="btnSubmit">
+                <span>GỬI THÔNG TIN</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="section rules scrollBy" data-nav="condition">
+      <div class="title title__green">
+        <h2>thể lệ chương trình</h2>
+      </div>
+      <div class="rule-box">
+        <div class="rule-item">
+          <div class="rule-txt">
+            <p>
+              Bà con nông dân mua <strong>phân bón NPK Cà Mau</strong> trong
+              thời gian diễn ra chương trình từ ngày
+              <strong>15/03/2022</strong> đến <strong>28/02/2024</strong> sẽ
+              có cơ hội tìm được <strong>phiếu may mắn</strong> trong bao phân
+              bón để tham gia chương trình Quay số may mắn trúng 81.344 giải
+              thưởng hấp dẫn (1.344 giải vàng và 80.000 giải may mắn).
+            </p>
+          </div>
+        </div>
+        <div class="rule-item">
+          <div class="rule-txt">
+            <p>
+              Các mã số trúng thưởng sẽ được công bố công khai, minh bạch
+              thông qua hình thức <strong>Livestream Quay số may mắn</strong>,
+              phát sóng trực tiếp trên fanpage Phân Bón Cà Mau
+            </p>
+          </div>
+        </div>
+        <div class="rule-item">
+          <div class="rule-txt">
+            <p>
+              Mã số may mắn chưa trúng thưởng tại từng đợt sẽ được BẢO LƯU để
+              tiếp tục tham gia quay số may mắn trong các đợt kế tiếp.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="title title__green">
+        <h2>hướng dẫn tham gia</h2>
+      </div>
+      <div class="support-box">
+        <div class="support-item">
+          <div class="step-title">
+            <div class="step-title__img">
+              <img class="step-light step-light--top" width="417" height="92" src="images/step-light.png" alt="Light" />
+              <img class="step-img" width="552" height="133" src="images/step-title.png" alt="Bước 1" />
+              <img class="step-light step-light--bot" width="417" height="92" src="images/step-light.png" alt="Light" />
+            </div>
+            <span>Bước 1</span>
+          </div>
+          <div class="step-brief">
+            <p>
+              Bà con nông dân mua phân bón NPK Cà Mau trong thời gian diễn ra
+              chương trình từ ngày <strong>15/03/2022 đến 28/02/2024</strong>.
+            </p>
+          </div>
+          <div class="step-image">
+            <img width="602" height="337" src="images/step-bo-spnpkcm.png" alt="NPK Cà mau" />
+          </div>
+        </div>
+
+        <div class="support-item">
+          <div class="step-title">
+            <div class="step-title__img">
+              <img class="step-light step-light--top" width="417" height="92" src="images/step-light.png" alt="Light" />
+              <img class="step-img" width="552" height="133" src="images/step-title.png" alt="Bước 2" />
+              <img class="step-light step-light--bot" width="417" height="92" src="images/step-light.png" alt="Light" />
+            </div>
+            <span>Bước 2</span>
+          </div>
+          <div class="step-brief">
+            <p>
+              Tìm phiếu may mắn trong các bao phân bón NPK Cà Mau để tham gia
+              Quay số may mắn trúng hàng ngàn giải thưởng hấp dẫn (Gồm 1.344
+              giải vàng & 80.000 giải may mắn)
+            </p>
+          </div>
+          <div class="step-image">
+            <img width="500" height="302" src="images/step-pmp-mua-vang-thang-lon.png" alt="Mã số may mắn" />
+          </div>
+        </div>
+
+        <div class="support-item support-item__full">
+          <div class="step-title">
+            <div class="step-title__img">
+              <img class="step-light step-light--top" width="417" height="92" src="images/step-light.png" alt="Light" />
+              <img class="step-img" width="552" height="133" src="images/step-title.png" alt="Bước 3" />
+              <img class="step-light step-light--bot" width="417" height="92" src="images/step-light.png" alt="Light" />
+            </div>
+            <span>Bước 3</span>
+          </div>
+          <div class="step-brief">
+            <p>
+              Trên phiếu may mắn có ghi mã số may mắn, làm theo 1 trong 2 cách
+              sau:
+            </p>
+          </div>
+          <div class="step-body">
+            <div class="step-detail">
+              <div class="detail-txt">
+                <p>Gửi tin nhắn theo cú pháp:</p>
+                <p>
+                  <strong>PBCM&lt;dấu cách&gt; <br />&lt;Mã số may mắn&gt;</strong>
+                  <br />gửi <strong>6089. <br />(1.000đ/tin nhắn)</strong>
+                </p>
+                <p>
+                  Ví dụ: <strong>PBCM CM123456</strong> <br />gửi
+                  <strong>6089</strong>
+                </p>
+              </div>
+              <div class="detail-pic">
+                <img width="487" height="510" src="images/step-sms-phone.png" alt="Gửi tin nhắn theo cú pháp" />
+              </div>
+            </div>
+            <div class="step-detail">
+              <div class="detail-txt">
+                <p>
+                  <strong>Quét QRcode trên mặt sau phiếu may mắn hoặc truy cập
+                    website</strong>
+                  <a href="https://khuyenmai.pvcfc.com.vn/" target="_blank">https://khuyenmai.pvcfc.com.vn/</a>
+                  để đăng ký tham gia chương trình (miễn phí).
+                </p>
+              </div>
+              <div class="detail-pic">
+                <img width="487" height="510" src="images/step-qr-phone.png" alt="Quét QRcode trên mặt sau phiếu may mắn hoặc
+                truy cập website" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="support-item support-item__full">
+          <div class="step-title">
+            <div class="step-title__img">
+              <img class="step-light step-light--top" width="417" height="92" src="images/step-light.png" alt="Light" />
+              <img class="step-img" width="552" height="133" src="images/step-title.png" alt="Bước 4" />
+              <img class="step-light step-light--bot" width="417" height="92" src="images/step-light.png" alt="Light" />
+            </div>
+            <span>Bước 3</span>
+          </div>
+          <div class="step-brief color-white">
+            <p>
+              Đón xem livestream <strong>QUAY SỐ MAY MẮN</strong> trên fanpage
+              Phân Bón Cà Mau để hồi hộp chào đón những chủ nhân trúng thưởng
+              từ Mùa Vàng Thắng Lớn
+            </p>
+          </div>
+          <div class="step-livestream">
+            <div class="livestream-wrap">
+              <img width="1268" height="907" src="images/livestream.jpg" alt="Live Stream" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section rewards">
+      <div class="banner-full">
+        <picture>
+          <source media="(min-width:1024px)" srcset="images/reward.jpg" />
+          <source media="(max-width:1023px)" srcset="images/reward-sp.jpg" />
+          <img width="1920" height="1273" src="reward.jpg" alt="Banner" />
+        </picture>
+      </div>
+      <img class="reward-slogan" width="440" height="236" src="images/slogan.png" alt="Mùa vàng thắng lớn 2023" />
+      <img class="reward-gift" width="908" height="955" src="images/reward.png" alt="Mùa vàng thắng lớn 2023" />
+      <div class="campaign-list">
+        <div class="campaign-item">
+          <div class="campaign-name">
+            <p>Chương trình Mùa Vàng <br />Thắng Lớn 2023 diễn ra trong</p>
+          </div>
+          <div class="campaign-time">
+            <div class="campaign-time__wrap">
+              <div class="month-number">12</div>
+              <div class="month-name">THÁNG</div>
+            </div>
+          </div>
+        </div>
+        <div class="campaign-item">
+          <div class="campaign-name">
+            <p>Chương trình sẽ diễn ra <br />Livestream quay số vào</p>
+          </div>
+          <div class="campaign-time">
+            <div class="campaign-time__wrap">
+              <div class="month-number">15</div>
+              <div class="month-name">VÀ <br />HOẶC</div>
+              <div class="month-number">30</div>
+              <div class="month-name">MỖI <br />THÁNG</div>
+            </div>
+          </div>
+        </div>
+        <div class="campaign-item">
+          <div class="campaign-name">
+            <p>Chương trình sẽ <br />có tổng cộng</p>
+          </div>
+          <div class="campaign-time">
+            <div class="campaign-time__wrap">
+              <div class="month-number">16</div>
+              <div class="month-name">LIVESTREAM <br />QUAY SỐ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reward-box">
+        <div class="reward-item">
+          <div class="reward-wrap">
+            <div class="reward-logo">
+              <img width="200" height="320" src="images/award-gold.png" alt="Giải vàng" />
+            </div>
+            <div class="reward-info">
+              <div class="reward-title">
+                <div class="reward-number gr__yellow">
+                  <div class="reward-value">1.344</div>
+                  <div class="reward-mask">1.344</div>
+                </div>
+                <div class="reward-name">
+                  CHỈ VÀNG <br /><small>NHẪN 99,99</small>
+                </div>
+              </div>
+              <div class="reward-txt">
+                <p>
+                  Trao trực tiếp tới bà con trúng giải sau khi liên hệ xác
+                  nhận
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reward-item">
+          <div class="reward-wrap">
+            <div class="reward-logo">
+              <img width="175" height="175" src="images/award-lucky.png" alt="Giải may mắn" />
+            </div>
+            <div class="reward-info">
+              <div class="reward-title">
+                <div class="reward-number gr__red">
+                  <div class="reward-value">80.000</div>
+                  <div class="reward-mask">80.000</div>
+                </div>
+                <div class="reward-name">
+                  <small>GIẢI</small> <br />MAY MẮN
+                </div>
+              </div>
+              <div class="reward-txt">
+                <p>Nhiều mệnh giá:</p>
+                <div class="reward-money">
+                  50.000đ, 100.000đ, 200.000đ, 500.000đ
+                </div>
+                <p>Nạp thẳng vào điện thoại bà con ngay khi trúng thưởng</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section livestream scrollBy">
+      <div class="livestream-content">
+        <div class="title title__green">
+          <h2>Livestream vừa chiếu</h2>
+        </div>
+        <div class="livestream-reward">
+          <img width="200" height="320" src="images/award-gold.png" alt="Giải vàng" />
+        </div>
+        <div class="livestream-box">
+          <div class="livestream-video">
+            <img width="1604" height="898" src="images/livestream-main.jpg" alt="livestream" />
+          </div>
+          <div class="livestream-detail">
+            <p>
+              Ngày ... vừa qua, <strong>Phân Bón Cà Mau</strong> dẵ tổ chức
+              thành công buổi quay số <strong>Livestream giải</strong> ...
+              Chương trình không chỉ nhằm góp phần làm minh bạch hoạt động
+              trao thường với sự góp mặt của ...
+              <strong>nông dân/ ... đại lý và/hoặc ... đại diện nhãn hàng</strong>
+              mà còn là cơ hội để bà con nông dân, đại lý và phân bón Cà Mau
+              giao lưu, trò chuyện sau những giờ làm việc vất vả.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section livestream">
+      <div class="livestream-content">
+        <div class="title title__green">
+          <h2>Livestream vừa chiếu</h2>
+        </div>
+        <div class="livestream-reward">
+          <img width="175" height="175" src="images/award-lucky.png" alt="Giải may mắn" />
+        </div>
+        <div class="livestream-box">
+          <div class="livestream-video">
+            <img width="1604" height="898" src="images/livestream-main.jpg" alt="livestream" />
+          </div>
+          <div class="livestream-detail">
+            <p>
+              Ngày ... vừa qua, <strong>Phân Bón Cà Mau</strong> dẵ tổ chức
+              thành công buổi quay số <strong>Livestream giải</strong> ...
+              Chương trình không chỉ nhằm góp phần làm minh bạch hoạt động
+              trao thường với sự góp mặt của ...
+              <strong>nông dân/ ... đại lý và/hoặc ... đại diện nhãn hàng</strong>
+              mà còn là cơ hội để bà con nông dân, đại lý và phân bón Cà Mau
+              giao lưu, trò chuyện sau những giờ làm việc vất vả.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section livestream-calendar scrollBy" data-nav="livestream">
+      <div class="live-calendar">
+        <div class="calendar-box">
+          <div class="calendar-list">
+            <div class="line-gold">
+              <img width="1112" height="10" src="images/line-gold.png" alt="Line Gold" />
+            </div>
+            <div class="calendar-award">
+              <img width="200" height="320" src="images/award-gold.png" alt="Giải vàng" />
+            </div>
+            <div class="calendar-item isGrey">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T5</p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Đã phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGrey">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T6</p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Đã phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGrey">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T7</p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Đã phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isRed">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T8</p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGreen">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T10</p>
+                  <span>2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGreen">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T11</p>
+                  <span>2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGreen">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T1</p>
+                  <span>2024</span>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGreen">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T2</p>
+                  <span>2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calendar-list">
+            <div class="line-gold">
+              <img width="1112" height="10" src="images/line-gold.png" alt="Line Gold" />
+            </div>
+            <div class="calendar-award">
+              <img width="175" height="175" src="images/award-lucky.png" alt="Giải may mắn" />
+            </div>
+            <div class="calendar-item isGrey">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T6</p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Đã phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">10,000</div>
+                    <div class="gift-name">GIẢI MAY MẮN</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... thẻ điện thoại đang tìm các
+                      bà con may mắn. Thông tin cập nhật cụ thể về chương
+                      trình sắp tới,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGrey">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T7</p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Đã phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">10,000</div>
+                    <div class="gift-name">GIẢI MAY MẮN</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... thẻ điện thoại đang tìm các
+                      bà con may mắn. Thông tin cập nhật cụ thể về chương
+                      trình sắp tới,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGrey">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T8</p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Đã phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">10,000</div>
+                    <div class="gift-name">GIẢI MAY MẮN</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... thẻ điện thoại đang tìm các
+                      bà con may mắn. Thông tin cập nhật cụ thể về chương
+                      trình sắp tới,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isRed">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T9</p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">10,000</div>
+                    <div class="gift-name">GIẢI MAY MẮN</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... thẻ điện thoại đang tìm các
+                      bà con may mắn. Thông tin cập nhật cụ thể về chương
+                      trình sắp tới,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGreen">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T10</p>
+                  <span>2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGreen">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T12</p>
+                  <span>2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGreen">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T1</p>
+                  <span>2024</span>
+                </div>
+              </div>
+            </div>
+            <div class="calendar-item isGreen">
+              <div class="calendar-bg">
+                <div class="calendar-wrap">
+                  <p>T2</p>
+                  <span>2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gift-stock">
+          <div class="stock-title">
+            <img width="155" height="74" src="images/stock-title.png" alt="Còn" />
+          </div>
+          <div class="stock-items">
+            <div class="stock-item stock-item__gold">
+              <div class="stock-item__title">
+                <div class="stock-item__value">
+                  <div class="stock__value">12,123</div>
+                  <div class="stock__mask">12,123</div>
+                </div>
+                <div class="stock-item__name">
+                  <small>GIẢI</small> <br />VÀNG
+                </div>
+                <img class="stock-icon stock-icon__left" src="images/gold-icon-left.png" alt="icon" />
+                <img class="stock-icon stock-icon__right" src="images/gold-icon-right.png" alt="icon" />
+              </div>
+              <div class="stock-item__txt">
+                <div class="stock-item__txt--bg">
+                  <p>Mỗi giải là một nhẫn vàng 1 chỉ 99,99</p>
+                </div>
+              </div>
+            </div>
+            <div class="stock-item stock-item__lucky">
+              <div class="stock-item__title">
+                <div class="stock-item__value">
+                  <div class="stock__value">80,000</div>
+                </div>
+                <div class="stock-item__name">
+                  <small>GIẢI</small> <br />MAY MẮN
+                </div>
+                <img class="stock-icon stock-icon__left" src="images/lucky-icon-left.png" alt="icon" />
+                <img class="stock-icon stock-icon__right" src="images/lucky-icon-right.png" alt="icon" />
+              </div>
+              <div class="stock-item__txt">
+                <div class="stock-item__txt--bg">
+                  <p>
+                    Giải may mắn nạp thẳng cước vào số điện thoại người trúng
+                    thưởng
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section results scrollBy" data-nav="results">
+      <div class="results-content">
+        <div class="results-box">
+          <div class="search-box">
+            <div class="search-bg">
+              <div class="result-search">
+                <h2>
+                  Tra cứu danh sách <small>Khách hàng trúng thưởng</small>
+                </h2>
+              </div>
+              <div class="search-form">
+                <form action="javascript:void(0)">
+                  <p>Hãy nhập mã số may mắn hoặc số điện thoại để tra cứu</p>
+                  <div class="form-group">
+                    <input type="text" placeholder="VD: 123456789" class="input-txt" value="" />
+                  </div>
+                </form>
+              </div>
+              <div class="buts">
+                <button type="button" class="but">
+                  <span>TRA CỨU</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="search-result search-result__win">
+            <p>
+              Mã tra cứu ...
+              <strong>đã trúng thưởng giải may mắn mệnh giá</strong> ... vào
+              lần quay số ngày ...
+            </p>
+          </div>
+          <div class="search-result search-result__lost">
+            <p>
+              Không tìm thấy thông tin. Bà con vui lòng kiểm tra kỹ thông tin
+              trước khi tra cứu
+            </p>
+          </div>
+          <div class="tab-box">
+            <div class="tab-header">
+              <div class="tab-item current" data-tab="gold">
+                <div class="tab-title tab-title--gold">
+                  <div class="tab-title__mask"><small>Giải</small> vàng</div>
+                  <div class="tab-title__txt"><small>Giải</small> vàng</div>
+                </div>
+              </div>
+              <div class="tab-item" data-tab="lucky">
+                <div class="tab-title tab-title--lucky">
+                  <div class="tab-title__mask">
+                    <small>Giải</small> may mắn
+                  </div>
+                  <div class="tab-title__txt">
+                    <small>Giải</small> may mắn
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-body">
+              <div class="body-item current" data-tab="gold">
+                <h3>
+                  GIẢI VÀNG – ĐỢT 1 – Ngày … - 168 nhẫn vàng 1 chỉ 99,99.
+                </h3>
+                <ul class="result-list result-list__title">
+                  <li>STT</li>
+                  <li>Mã số may mắn</li>
+                  <li>họ & tên</li>
+                  <li>số điện thoại</li>
+                  <li>khu vực</li>
+                </ul>
+                <div class="swiper result-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123456</li>
+                        <li>Nguyễn Văn A</li>
+                        <li>0909.552.550</li>
+                        <li>An Giang</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123457</li>
+                        <li>Nguyễn Văn B</li>
+                        <li>0909.552.551</li>
+                        <li>Đồng Tháp</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123458</li>
+                        <li>Nguyễn Văn C</li>
+                        <li>0909.552.552</li>
+                        <li>Bến Tre</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123459</li>
+                        <li>Nguyễn Văn D</li>
+                        <li>0909.552.553</li>
+                        <li>Cần Thơ</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123460</li>
+                        <li>Nguyễn Văn E</li>
+                        <li>0909.552.554</li>
+                        <li>Tiền Giang</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123461</li>
+                        <li>Nguyễn Văn F</li>
+                        <li>0909.552.555</li>
+                        <li>Lâm Đồng</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123462</li>
+                        <li>Nguyễn Văn G</li>
+                        <li>0909.552.556</li>
+                        <li>Đà Lạt</li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123456</li>
+                        <li>Nguyễn Văn A</li>
+                        <li>0909.552.550</li>
+                        <li>An Giang</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123457</li>
+                        <li>Nguyễn Văn B</li>
+                        <li>0909.552.551</li>
+                        <li>Đồng Tháp</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123458</li>
+                        <li>Nguyễn Văn C</li>
+                        <li>0909.552.552</li>
+                        <li>Bến Tre</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123459</li>
+                        <li>Nguyễn Văn D</li>
+                        <li>0909.552.553</li>
+                        <li>Cần Thơ</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123460</li>
+                        <li>Nguyễn Văn E</li>
+                        <li>0909.552.554</li>
+                        <li>Tiền Giang</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123461</li>
+                        <li>Nguyễn Văn F</li>
+                        <li>0909.552.555</li>
+                        <li>Lâm Đồng</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123462</li>
+                        <li>Nguyễn Văn G</li>
+                        <li>0909.552.556</li>
+                        <li>Đà Lạt</li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123456</li>
+                        <li>Nguyễn Văn A</li>
+                        <li>0909.552.550</li>
+                        <li>An Giang</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123457</li>
+                        <li>Nguyễn Văn B</li>
+                        <li>0909.552.551</li>
+                        <li>Đồng Tháp</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123458</li>
+                        <li>Nguyễn Văn C</li>
+                        <li>0909.552.552</li>
+                        <li>Bến Tre</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123459</li>
+                        <li>Nguyễn Văn D</li>
+                        <li>0909.552.553</li>
+                        <li>Cần Thơ</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123460</li>
+                        <li>Nguyễn Văn E</li>
+                        <li>0909.552.554</li>
+                        <li>Tiền Giang</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123461</li>
+                        <li>Nguyễn Văn F</li>
+                        <li>0909.552.555</li>
+                        <li>Lâm Đồng</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123462</li>
+                        <li>Nguyễn Văn G</li>
+                        <li>0909.552.556</li>
+                        <li>Đà Lạt</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <div class="body-item" data-tab="lucky">
+                <h3>
+                  GIẢI MAY MẮN – ĐỢT 2 – Ngày … - 10,000 cước điện thoại nhiều
+                  mệnh giá
+                </h3>
+                <ul class="result-list result-list__title">
+                  <li>STT</li>
+                  <li>Mã số may mắn</li>
+                  <li>số điện thoại</li>
+                </ul>
+                <div class="swiper result-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123456</li>
+                        <li>0909.552.550</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123457</li>
+                        <li>0909.552.551</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123458</li>
+                        <li>0909.552.552</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123459</li>
+                        <li>0909.552.553</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123460</li>
+                        <li>0909.552.554</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123461</li>
+                        <li>0909.552.555</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123462</li>
+                        <li>0909.552.556</li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123456</li>
+                        <li>0909.552.550</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123457</li>
+                        <li>0909.552.551</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123458</li>
+                        <li>0909.552.552</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123459</li>
+                        <li>0909.552.553</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123460</li>
+                        <li>0909.552.554</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123461</li>
+                        <li>0909.552.555</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123462</li>
+                        <li>0909.552.556</li>
+                      </ul>
+                    </div>
+                    <div class="swiper-slide">
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123456</li>
+                        <li>0909.552.550</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123457</li>
+                        <li>0909.552.551</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123458</li>
+                        <li>0909.552.552</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123459</li>
+                        <li>0909.552.553</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123460</li>
+                        <li>0909.552.554</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123461</li>
+                        <li>0909.552.555</li>
+                      </ul>
+                      <ul class="result-list">
+                        <li>1</li>
+                        <li>CM123462</li>
+                        <li>0909.552.556</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section faqs scrollBy" data-nav="faqs">
+      <div class="faq-box">
+        <h2>CÂU HỎI <br />THƯỜNG GẶP</h2>
+        <div class="faq-product">
+          <img class="faq-product__wave" width="947" height="344" src="images/faq-wave.png" alt="Wave" />
+          <img class="faq-product__main" width="852" height="477" src="images/faq-product.png" alt="NPK Cà mau" />
+          <img class="faq-product__light" width="685" height="197" src="images/faq-light.png" alt="Light" />
+        </div>
+        <div class="faq-items">
+          <div class="faq-item">
+            <div class="faq-title">
+              <h3>Mùa Vàng Thắng Lớn 2023 là chương trình gì?</h3>
+            </div>
+            <div class="faq-detail">
+              <p>
+                Tiếp nối thành công của chương trình năm 2022, Mùa Vàng Thắng
+                Lớn 2023 là chương trình khuyến mãi lớn nhất trong năm của
+                Phân Bón Cà Mau, áp dụng với sản phẩm NPK Cà Mau trên phạm vi
+                toàn quốc, với tổng giá trị chương trình lên tới 21 tỷ đồng.
+                Mùa Vàng Thắng Lớn 2023 diễn ra từ 15/03/2023 tới hết
+                28/02/2024.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              <h3>Cách thức tham gia Mùa Vàng Thắng Lớn 2023?</h3>
+            </div>
+            <div class="faq-detail">
+              <p>
+                Từ ngày 15/03/2023 đến ngày 28/02/2024, để tham gia chương
+                trình Mùa Vàng Thắng Lớn 2023, bà con cần thực hiện đầy đủ các
+                bước sau:
+              </p>
+
+              <p>
+                <strong>+ Bước 1:</strong> Chọn sử dụng phân bón NPK Cà Mau.
+              </p>
+
+              <p>
+                <strong>+ Bước 2:</strong> Tìm Phiếu may mắn trong các bao
+                phân bón NPK Cà Mau.
+              </p>
+
+              <p>
+                <strong>+ Bước 3:</strong> Trên Phiếu may mắn có ghi mã số may
+                mắn, để gửi mã số may mắn tới Phân Bón Cà Mau, bà con làm theo
+                1 trong 2 cách sau:
+              </p>
+              <ul>
+                <li>
+                  <strong>Cách 1:</strong> Gửi tin nhắn theo cú pháp:
+                  PBCM&lt;dấu cách&gt;
+                </li>
+                &lt;Mã số may mắn&gt; gửi 6089. (1.000đ/tin nhắn) - Ví dụ:
+                PBCM CM123456 gửi 6089.
+                <li>
+                  <strong>Cách 2:</strong> Quét QRcode trên phiếu may mắn hoặc
+                  truy cập website
+                  <a href="https://khuyenmai.pvcfc.com.vn/" target="_blank">https://khuyenmai.pvcfc.com.vn/</a>
+                  để đăng ký tham gia chương trình (miễn phí).
+                </li>
+              </ul>
+
+              <p>
+                <strong>+ Bước 4:</strong> Đón xem livestream QUAY SỐ MAY MẮN
+                trên fanpage Phân Bón Cà Mau để hồi hộp chào đón những chủ
+                nhân trúng thưởng từ Mùa Vàng Thắng Lớn 2023.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              <h3>
+                Chương trình Mùa Vàng Thắng Lớn 2023 gồm những giải thưởng
+                nào?
+              </h3>
+            </div>
+            <div class="faq-detail">
+              <p>
+                Mùa Vàng Thắng Lớn có 81.344 giải thưởng. Bao gồm: <br />+
+                1.344 giải nhẫn vàng 1 chỉ 99,99 <br />+ 80.000 giải may mắn
+                nhiều mệnh giá (50.000 đồng, 100.000 đồng, 200.000 đồng,
+                500.000 đồng) được Phân Bón Cà Mau nạp thẳng vào số điện thoại
+                người trúng thưởng. 
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              <h3>
+                Làm thế nào để biết tôi đã trúng thưởng Mùa Vàng Thắng Lớn
+                2023?
+              </h3>
+            </div>
+            <div class="faq-detail">
+              <p>
+                Trong vòng 48h kể từ khi xác định kết quả quay số trúng thưởng
+                bà con sẽ nhận được tin nhắn:“Chuc mung Ma du thuong xxxxxxxx
+                da trung thuong xxxxxxxx cho dot quay so ngay dd/mm/yyyy. Vui
+                long giu lai tin nhan Phan Bon Ca Mau se lien he huong dan
+                nhan thuong”
+              </p>
+
+              <p>
+                Để kiểm tra mình có trúng thưởng hay không, bà con có thể theo
+                dõi qua các hình thức sau:
+              </p>
+              <ul>
+                <li>
+                  Đón xem các livestream trên fanpage của Phân Bón Cà Mau để
+                  biết kết quả nhanh nhất.
+                </li>
+                <li>
+                  Truy cập vào website (muavangthanglon.pvcfc.com.vn) và tra
+                  cứu kết quả theo hướng dẫn.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              <h3>
+                Chương trình Mùa Vàng Thắng Lớn 2023 làm thế nào để xác định
+                người trúng giảig?
+              </h3>
+            </div>
+            <div class="faq-detail">
+              <p>
+                Kết quả Mùa Vàng Thắng Lớn 2023 được xác định thông qua
+                LIVESTREAM QUAY SỐ MAY MẮN. Mỗi buổi Quay số đều được chứng
+                kiến bởi khách mời là bà con tham gia chương trình, đại diện
+                Công ty Cổ phần Phân bón Dầu khí Cà Mau và phát sóng trực tiếp
+                trên fanpage Phân Bón Cà Mau (<a href="https://www.facebook.com/phanboncamau"
+                  target="_blank">https://www.facebook.com/phanboncamau</a>). Toàn bộ thông tin về chương trình, giải
+                thưởng và lịch
+                quay số đã được đăng ký theo pháp luật.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              <h3>
+                Phân Bón Cà Mau sẽ công bố danh sách người trúng thưởng như
+                thế nào?
+              </h3>
+            </div>
+            <div class="faq-detail">
+              <p>
+                Kết quả danh sách người trúng thưởng được thông báo trong vòng
+                1 tuần kể từ ngày xác định trúng thưởng trên nền tảng mạng xã
+                hội facebook qua fanpage Phân Bón Cà Mau và trên website
+                chương trình
+                <a href="https://www.muavangthanglon.pvcfc.com.vn"
+                  target="_blank">https://www.muavangthanglon.pvcfc.com.vn</a>.
+              </p>
+
+              <p>
+                Trong vòng 48h kể từ khi xác định kết quả quay số trúng
+                thưởng, khách hàng trúng thưởng sẽ nhận được tin nhắn SMS từ
+                Công ty Cổ phần Phân bón Dầu khí Cà Mau để thông báo trúng
+                thưởng với nội dung “Chuc mung Ma du thuong xxxxxxxx da trung
+                thuong xxxxxxxx cho dot quay so ngay dd/mm/yyyy. Vui long giu
+                lai tin nhan Phan Bon Ca Mau se lien he huong dan nhan
+                thuong”.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              <h3>
+                Nếu chưa trúng thưởng, Phiếu may mắn đã tham gia có được bảo
+                lưu cho các lần quay số tiếp theo không?
+              </h3>
+            </div>
+            <div class="faq-detail">
+              <p>
+                Có. Phiếu may mắn sẽ được bảo lưu và tiếp tục tham dự Quay số
+                trúng thưởng tại các kỳ tiếp theo. Vì vậy, bà con sử dụng NPK
+                Cà Mau càng nhiều, cơ hội trúng thưởng càng cao trong suốt
+                thời gian diễn ra chương trình.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              <h3>
+                Sản phẩm phân bón NPK của chương trình Mùa Vàng Thắng Lớn 2023
+                có những ưu điểm gì?
+              </h3>
+            </div>
+            <div class="faq-detail">
+              <p>
+                Phân bón NPK Cà Mau do Phân Bón Cà Mau sản xuất được chính
+                thức tung ra thị trường năm 2021 và được bà con nông dân phản
+                hồi tích cực. NPK Cà Mau có nhiều công thức khác nhau, phù hợp
+                với đa dạng cây trồng và thổ nhưỡng, sử dụng được cho nhiều
+                giai đoạn phát triển của cây. <br />Ưu điểm của NPK Cà Mau: là
+                phân bón 1 hạt 1 màu, dễ tan trong nước, giúp cây trồng dễ hấp
+                thu, không cần phối trộn phức tạp; từ đó, tiết kiệm công sức
+                canh tác rõ rệt. Ngoài ra, hàm lượng chất dinh dưỡng ổn định
+                giúp cây trồng phát triển khoẻ mạnh, nâng cao năng suất, đem
+                lại giá trị ổn định cho nhiều mùa vụ, đúng với định hướng phát
+                triển nông nghiệp bền vững. 
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-title">
+              <h3>Nếu thắc mắc về chương trình, tôi cần liên hệ đến đâu?</h3>
+            </div>
+            <div class="faq-detail">
+              <ul>
+                <li>Nhấc máy, gọi ngay đến tổng đài: 1800 888 606.</li>
+                <li>
+                  Truy cập fanpage chính thức của Phân Bón Cà Mau:
+                  <a href="https://www.facebook.com/phanboncamau"
+                    target="_blank">https://www.facebook.com/phanboncamau</a>
+                </li>
+                <li>
+                  Truy cập trang website chính thức của Mùa Vàng Thắng Lớn
+                  2023:
+                  <a href="https://muavangthanglon.pvcfc.com.vn/"
+                    target="_blank">https://muavangthanglon.pvcfc.com.vn/</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section news scrollBy" data-nav="news">
+      <div class="news-box">
+        <div class="main-new">
+          <picture>
+            <source media="(min-width:1024px)" srcset="images/new-main.png" />
+            <source media="(max-width:1023px)" srcset="images/new-main-sp.png" />
+            <img width="1587" height="587" src="new-main.png" alt="NPK Cà mau" />
+          </picture>
+        </div>
+
+        <div class="video-block">
+          <h2>XEM VIDEO HƯỚNG DẪN <br />THAM GIA CHƯƠNG TRÌNH</h2>
+          <div class="video-box">
+            <video width="320" height="240" muted playsinline="playsinline">
+              <source src="videos/dv-beckham.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="poster-video">
+              <img class="poster" width="1000" height="563" src="images/video-thumb.jpg" alt="VIDEO" />
+              <img class="play-icon" src="images/play-icon.png" alt="play" />
+            </div>
+          </div>
+        </div>
+
+        <div class="articles">
+          <div class="article-box">
+            <div class="swiper article-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="article-list">
+                    <div class="article" data-id="1">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new1.jpg"
+                          alt="Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê buôn ma thuột" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê
+                          buôn ma thuột
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="2">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new2.jpg"
+                          alt="PVCFC kỷ niệm 12 năm thành lập: hành trình của giá trị kiến tạo" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC kỷ niệm 12 năm thành lập: hành trình của giá
+                          trị kiến tạo
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="3">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new3.jpg"
+                          alt="PVCFC ký kết hợp tác quan trọng với tập đoàn hóa chất vân thiên" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC ký kết hợp tác quan trọng với tập đoàn hóa
+                          chất vân thiên
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="4">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new1.jpg"
+                          alt="Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê buôn ma thuột" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê
+                          buôn ma thuột
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="5">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new2.jpg"
+                          alt="PVCFC kỷ niệm 12 năm thành lập: hành trình của giá trị kiến tạo" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC kỷ niệm 12 năm thành lập: hành trình của giá
+                          trị kiến tạo
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="6">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new3.jpg"
+                          alt="PVCFC ký kết hợp tác quan trọng với tập đoàn hóa chất vân thiên" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC ký kết hợp tác quan trọng với tập đoàn hóa
+                          chất vân thiên
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="article-list">
+                    <div class="article" data-id="1">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new1.jpg"
+                          alt="Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê buôn ma thuột" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê
+                          buôn ma thuột
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="2">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new2.jpg"
+                          alt="PVCFC kỷ niệm 12 năm thành lập: hành trình của giá trị kiến tạo" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC kỷ niệm 12 năm thành lập: hành trình của giá
+                          trị kiến tạo
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="3">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new3.jpg"
+                          alt="PVCFC ký kết hợp tác quan trọng với tập đoàn hóa chất vân thiên" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC ký kết hợp tác quan trọng với tập đoàn hóa
+                          chất vân thiên
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="4">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new1.jpg"
+                          alt="Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê buôn ma thuột" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê
+                          buôn ma thuột
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="5">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new2.jpg"
+                          alt="PVCFC kỷ niệm 12 năm thành lập: hành trình của giá trị kiến tạo" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC kỷ niệm 12 năm thành lập: hành trình của giá
+                          trị kiến tạo
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="6">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new3.jpg"
+                          alt="PVCFC ký kết hợp tác quan trọng với tập đoàn hóa chất vân thiên" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC ký kết hợp tác quan trọng với tập đoàn hóa
+                          chất vân thiên
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="article-list">
+                    <div class="article" data-id="1">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new1.jpg"
+                          alt="Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê buôn ma thuột" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê
+                          buôn ma thuột
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="2">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new2.jpg"
+                          alt="PVCFC kỷ niệm 12 năm thành lập: hành trình của giá trị kiến tạo" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC kỷ niệm 12 năm thành lập: hành trình của giá
+                          trị kiến tạo
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="3">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new3.jpg"
+                          alt="PVCFC ký kết hợp tác quan trọng với tập đoàn hóa chất vân thiên" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC ký kết hợp tác quan trọng với tập đoàn hóa
+                          chất vân thiên
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="4">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new1.jpg"
+                          alt="Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê buôn ma thuột" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          Phân Bón Cà Mau - Nhà Tài Trợ Vàng Của lễ hội cà phê
+                          buôn ma thuột
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="5">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new2.jpg"
+                          alt="PVCFC kỷ niệm 12 năm thành lập: hành trình của giá trị kiến tạo" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC kỷ niệm 12 năm thành lập: hành trình của giá
+                          trị kiến tạo
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="article" data-id="6">
+                      <div class="article-pic">
+                        <img width="443" height="331" src="images/new3.jpg"
+                          alt="PVCFC ký kết hợp tác quan trọng với tập đoàn hóa chất vân thiên" />
+                      </div>
+                      <div class="article-txt">
+                        <h3>
+                          PVCFC ký kết hợp tác quan trọng với tập đoàn hóa
+                          chất vân thiên
+                        </h3>
+                        <div class="link-mask">
+                          <span>XEM THÊM</span><span class="arrow-next"><img width="24" height="25"
+                              src="images/arrow-next.png" alt="Xem thên" /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+        <div class="hotline-box">
+          <a class="hotline" href="tel:1800888606"><img width="607" height="141" src="images/hotline.png"
+              alt="1800888606" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="footer-col">
+        <div class="subtile">TRỤ SỞ CHÍNH</div>
+        <ul>
+          <li>
+            <span class="info-icon"><img width="24" height="24" src="images/icon-home.png" alt="home icon" /></span>
+            <p>
+              Lô D, Khu CN Phường 1, Đường Ngô Quyền, Phường 1, Tp. Cà Mau
+            </p>
+          </li>
+          <li>
+            <span class="info-icon"><img width="18" height="18" src="images/icon-call.png" alt="call icon" /></span>
+            <p><a href="tel:0290.3819000">0290.3819000</a></p>
+          </li>
+          <li>
+            <span class="info-icon"><img width="18" height="18" src="images/icon-call.png" alt="call icon" /></span>
+            <p><a href="tel:0290.3590501">0290.3590501</a></p>
+          </li>
+          <li>
+            <span class="info-icon"><img width="18" height="18" src="images/icon-email.png" alt="email icon" /></span>
+            <p><a href="mailto:info@pvcfc.com.vn">info@pvcfc.com.vn</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="subtile">văn phòng hồ chí minh</div>
+        <ul>
+          <li>
+            <span class="info-icon"><img width="24" height="24" src="images/icon-home.png" alt="home icon" /></span>
+            <p>
+              Tầng 18, tòa nhà Victory, số 12 Tân Trào, Phường Tân Phú, Quận
+              7, TP.HCM
+            </p>
+          </li>
+          <li>
+            <span class="info-icon"><img width="18" height="18" src="images/icon-call.png" alt="call icon" /></span>
+            <p><a href="tel:0290.3819000">0290.3819000</a></p>
+          </li>
+          <li>
+            <span class="info-icon"><img width="18" height="18" src="images/icon-call.png" alt="call icon" /></span>
+            <p><a href="tel:0290.3590501">0290.3590501</a></p>
+          </li>
+          <li>
+            <span class="info-icon"><img width="18" height="18" src="images/icon-email.png" alt="email icon" /></span>
+            <p><a href="mailto:info@pvcfc.com.vn">info@pvcfc.com.vn</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="subtile">Website liên kết</div>
+        <div class="dropdown website__linked">
+          <div class="dropdown-toggle">
+            <span>Website liên kết</span>
+            <img class="dropdown-icon" width="24" height="24" src="images/website-arrow.png" alt="icon" />
+          </div>
+          <div class="dropdown-menu">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">https://www.facebook.com/</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" target="_blank">https://www.youtube.com/</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">https://www.youtube.com/</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank"><img width="25" height="24" src="images/icon-facebook.png"
+              alt="facebook" /></a>
+          <a href="https://www.youtube.com/" target="_blank"><img width="25" height="24" src="images/icon-youtube.png"
+              alt="youtube" /></a>
+          <a href="https://www.instagram.com/" target="_blank"><img width="25" height="24"
+              src="images/icon-intagram.png" alt="intagram" /></a>
+        </div>
+        <div class="subtile">kết nối với chúng tôi</div>
+        <div class="footer-qa">
+          <img class="medical-qr" width="100" height="100" src="images/icon-qr.png" alt="Khai báo y tế" />
+          <p>Khai báo y tế</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="pic">
+          <img width="324" height="324" src="images/logo-group.png" alt="logo" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <div class="footer-support">
+        <div class="copyright">Copyright © 2023 PVCFC. Thiết kế website bởi iDigit.</div>
+        <ul class="footer-nav">
+          <li><a href="#">Điều khoản sử dụng&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+          <li><a href="#">Chính sách bảo mật&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup popup__lost" id="popLost">
+    <div class="overlay"></div>
+    <div class="overlay-pattern"></div>
+    <div class="popup-inr">
+      <div class="message-lucky">
+        <h2>Chúc bà con may mắn lần sau!</h2>
+        <p>
+          Phân Bón Cà Mau vẫn còn rất nhiều giải thưởng đang chờ đón bà con
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup popup__win" id="popWin">
+    <div class="overlay"></div>
+    <div class="overlay-pattern"></div>
+    <div class="popup-inr">
+      <div class="message-lucky">
+        <img width="798" height="515" src="images/welcome-gift.png" alt="Chúc mừng trúng thưởng" />
+        <h2 id="giftName">Samsung A015F</h2>
+        <p>
+          Công ty Cổ phần Phân bón Dầu khí Cà Mau sẽ chuyển quà đến địa chỉ bà
+          con đã cung cấp trong thời gian sớm nhất
+        </p>
+        <span class="message-note">*** Lưu ý: Bà con không được thay đổi địa chỉ nhận quà trong mọi
+          trường hợp.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup popup__support" id="popSupport">
+    <div class="overlay"></div>
+    <div class="close-pop"></div>
+    <div class="popup-inr">
+      <div class="ajax-load"><!--Load By Ajax--></div>
+    </div>
+  </div>
+
+  <div class="popup popup__new" id="popNewDetail">
+    <div class="overlay"></div>
+    <div class="close-pop"></div>
+    <div class="popup-inr">
+      <div class="ajax-load"><!--Load By Ajax--></div>
+    </div>
+  </div>
+
+  <a class="hotline-stikcy" href="tel:1800888606">
+    <img src="images/hotline-sticky.png" width="123" height="140" alt="Hotline" />
+  </a>
+  <div class="to-top">
+    <img src="images/to-top.png" width="100" height="100" alt="Go to top" />
+  </div>
+
+  <!--script-->
+  <noscript id="normal-styles">
+    <link href="css/popup.css" rel="stylesheet" type="text/css" />
+  </noscript>
+  <script>
+    var normalStyles = function () {
+      var normalNode = document.getElementById("normal-styles");
+      var normalReplacement = document.createElement("div");
+      normalReplacement.innerHTML = normalNode.textContent;
+      document.body.appendChild(normalReplacement);
+      normalNode.parentElement.removeChild(normalNode);
+    };
+    window.setTimeout(normalStyles, 0);
+  </script>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.fortune.js"></script>
+  <script src="js/main.js"></script>
+  <!--script-->
+</body>
+
+</html>
