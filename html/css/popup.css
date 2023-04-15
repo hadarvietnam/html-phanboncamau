@@ -505,6 +505,9 @@ input[type=number] {
     display: none;
 }
   
+.but.bg-red::before {
+    background: #FF2300;
+}
 
 @supports (-webkit-text-stroke: green) {
     .new-data h2 {

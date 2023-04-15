@@ -1,7 +1,4 @@
 
-
-
-
 // Robot Questions and Answers
 var curRotot;
 var robots = [
@@ -69,7 +66,7 @@ function valiadPhone(byThis) {
 
 function validSelect(byThis) {
   var result = true;
-  if ($(byThis).find(".selected").attr('data-vale') === 'none') {
+  if ($(byThis).find(".selected").attr('data-value') === 'none') {
     result = false;
   }
   return result;
@@ -79,6 +76,7 @@ function validSelect(byThis) {
 function validRobot(byThis) {
   var result = true;
   var value = $(byThis).val();
+
   if(value == curRotot.answer) {
     result = true;
   } else {
@@ -113,6 +111,33 @@ function infoShowError(byThis) {
       $("#phoneNumber").parent().addClass("show__error");
     }
   }
+  if ($(byThis).attr("id") === "citySelect") {
+    city = validSelect("#citySelect");
+    if(city) {
+      $("#citySelect").parent().removeClass("show__error");
+    } 
+    else{
+      $("#citySelect").parent().addClass("show__error");
+    }
+  }
+  if ($(byThis).attr("id") === "districtSelect") {
+    district = validSelect("#districtSelect");
+    if(district) {
+      $("#districtSelect").parent().removeClass("show__error");
+    } 
+    else{
+      $("#districtSelect").parent().addClass("show__error");
+    }
+  }
+  if ($(byThis).attr("id") === "townSelect") {
+    town = validSelect("#townSelect");
+    if(town) {
+      $("#townSelect").parent().removeClass("show__error");
+    } 
+    else{
+      $("#townSelect").parent().addClass("show__error");
+    }
+  }
   if ($(byThis).attr("id") === "robotAnswer") {
     robot = validRobot("#robotAnswer");
     if (robot) {
@@ -139,6 +164,7 @@ function infoValid() {
     district &&
     town && robot
   ) {
+    console.log('valid');
     if ($("#phoneNumber").val().trim().length >= phoneMin) {
       $("#btnSubmit").attr("disabled", false);
     } else {
@@ -270,7 +296,7 @@ function initRobot() {
 $(document).on("click", ".dropdown-toggle", function () {
   var $box = $(this).parent();
   $box.removeClass('show__error');
-  $box.addClass('jusClick');
+  //$box.addClass('jusClick');
   if ($(this).parent().hasClass("open")) {
     $(this).parent().removeClass("open");
     if ($box.find('.dropdown-menu li.selected').length === 0) {
@@ -280,16 +306,13 @@ $(document).on("click", ".dropdown-toggle", function () {
     $(".dropdown").removeClass("open");
     $(this).parent().addClass("open");
   }
-
 });
 
 // Selected item Dropdown
 $(document).on("click", ".dropdown-menu li", function () {
   if (!$(this).hasClass("selected")) {
     var $box = $(this).parent().parent().parent();
-
     var text = $(this).text();
-    var target = $(this).attr('data-value');
 
     $box.find('.dropdown-menu li.selected').removeClass('selected');
     $(this).addClass('selected');
@@ -304,12 +327,11 @@ $(document).on("click", ".dropdown-menu li", function () {
       loadTown(boxId);
     }
 
-    if (target === 'none') {
-      $box.parent().addClass('show__error')
-    } else {
-      $box.parent().removeClass('show__error')
+    if(boxId) {
+      infoShowError($box);
+      infoValid();
     }
-
+    
   }
 });
 
@@ -366,12 +388,8 @@ $(document).on('click', '.increase-number', function () {
   if (value || value === 0) {
     value = value + 1;
     $('#robotAnswer').val(value);
-    robot = validRobot("#robotAnswer");
-    if (robot) {
-      $("#robotAnswer").parent().removeClass("show__error");
-    } else {
-      $("#robotAnswer").parent().addClass("show__error");
-    }
+    infoShowError('#robotAnswer');
+    infoValid();
   }
 
 });
@@ -384,45 +402,57 @@ $(document).on('click', '.decrease-number', function () {
     value = value - 1;
     value = value < 0 ? 0 : value;
     $('#robotAnswer').val(value);
-    robot = validRobot("#robotAnswer");
-    if (robot) {
-      $("#robotAnswer").parent().removeClass("show__error");
-    } else {
-      $("#robotAnswer").parent().addClass("show__error");
-    }
+    infoShowError('#robotAnswer');
+    infoValid();
   }
 });
 
-
-
-
-// Tab Result event
-$(document).on('click', '.tab-item', function () {
-  if (!$(this).hasClass('current')) {
-    var tab = $(this).attr('data-tab');
-    $('.tab-item, .body-item').removeClass('current');
-    $('.tab-item[data-tab=' + tab + '], .body-item[data-tab=' + tab + ']').addClass('current');
-  }
-});
 
 
 
 // Result Swiper
 function resultsSlider() {
 
-  $('.body-item').each(function (_index, elm) {
-    new Swiper(elm.querySelector('.result-swiper'), {
-      effect: "slide",
-      speed: 800,
-      loop: false,
-      spaceBetween: 20,
-      grabCursor: true,
-      navigation: {
-        nextEl: elm.querySelector('.swiper-button-next'),
-        prevEl: elm.querySelector('.swiper-button-prev'),
-      },
-    });
+  var resultSwiper = new Swiper('.result-swiper', {
+    effect: "slide",
+    speed: 800,
+    loop: false,
+    spaceBetween: 20,
+    grabCursor: true,
+    allowTouchMove: false
   });
+
+  $('.tab-box .swiper-button-prev').addClass('swiper-button-disabled');
+
+  $(document).on('click', '.tab-item', function () {
+    if (!$(this).hasClass('current')) {
+      var tab = $(this).attr('data-tab');
+      $('.tab-item, .body-item').removeClass('current');
+      $('.tab-item[data-tab=' + tab + ']').addClass('current');
+      if(tab === 'gold') {
+        resultSwiper.slideTo(0, 800, null);
+        $('.tab-box .swiper-button-prev').addClass('swiper-button-disabled');
+        $('.tab-box .swiper-button-next').removeClass('swiper-button-disabled');
+      } else {
+        resultSwiper.slideTo(1, 800, null);
+        $('.tab-box .swiper-button-prev').removeClass('swiper-button-disabled');
+        $('.tab-box .swiper-button-next').addClass('swiper-button-disabled');
+      }
+
+    }
+  });
+
+  // Trigger gold tab
+  $(document).on('click', '.tab-box .swiper-button-next', function () {
+    $('.tab-item[data-tab="lucky"]').trigger('click');
+  });
+
+  // Trigger lucky tab
+  $(document).on('click', '.tab-box .swiper-button-prev', function () {
+    $('.tab-item[data-tab="gold"]').trigger('click');
+  });
+
+  
 }
 
 
@@ -463,16 +493,24 @@ $(document).on("click", ".faq-title", function (e) {
   }
 });
 
-// Toggle Video Intro
-$(document).on('click', '.video-box', function () {
-  if ($(this).hasClass('playing')) {
-    $(this).removeClass('playing');
-    $(this).find('video')[0].pause();
-  } else {
+// Video end Listener
+$('video').on('ended', function () {
     $('.playing').removeClass('playing');
-    $(this).addClass('playing');
-    $(this).find('video')[0].muted = false;
-    $(this).find('video')[0].play();
+});
+
+// Toggle Video
+$(document).on('click', '.poster-video', function () {
+  if ($(this).parent().hasClass('playing')) {
+    $(this).parent().removeClass('playing');
+    $(this).parent().find('video')[0].pause();
+  } else {
+    if ($('.playing').length) {
+      $('.playing video')[0].pause();
+      $('.playing').removeClass('playing');
+    }
+    $(this).parent().addClass('playing');
+    $(this).parent().find('video')[0].muted = false;
+    $(this).parent().find('video')[0].play();
   }
 });
 
@@ -481,9 +519,8 @@ $(document).on('click', '.video-box', function () {
 $(document).on("click", ".nav li", function () {
   $('body').removeClass('open-menu');
   var nav = $(this).attr('data-nav');
-  //var headerH = $('.header-inr').innerHeight();
-  var headerH = 0;
-
+  var headerH = $('.header-inr').innerHeight();
+  
   $('.nav li').removeClass('nav-active');
   $('.scrollBy.nav-active').removeClass('nav-active');
   $('.nav li[data-nav=' + nav + '], .scrollBy[data-nav=' + nav + ']').addClass('nav-active');
@@ -497,6 +534,11 @@ $(document).on("click", ".nav li", function () {
 // Go To Top
 $(document).on("click", ".to-top", function () {
   $('html,body').animate({ scrollTop: 0 }, 'slow');
+});
+
+// Go To Register
+$(document).on("click", "#registerBut", function () {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
 
@@ -570,6 +612,11 @@ window.addEventListener("scroll", function () {
   } else {
     document.querySelector(".to-top") &&
       document.querySelector(".to-top").classList.remove("show");
+  }
+  if(top > 150) {
+    $('.header').addClass('fixed');
+  } else {
+    $('.header').removeClass('fixed');
   }
 });
 

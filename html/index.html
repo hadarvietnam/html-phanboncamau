@@ -41,10 +41,10 @@
           Phân bón cà mau, hạt ngọc mùa vàng
         </h1>
         <ul class="nav">
-          <li class="nav-active" data-nav="win">Mùa Vàng <br />Thắng Lớn</li>
+          <li class="nav-active" data-nav="win">Mùa Vàng Thắng Lớn</li>
           <li data-nav="condition">Thể lệ</li>
-          <li data-nav="livestream">Lịch <br />Livestream</li>
-          <li data-nav="results">Kết quả <br />trúng thưởng</li>
+          <li data-nav="livestream">Lịch Livestream</li>
+          <li data-nav="results">Kết quả trúng thưởng</li>
           <li data-nav="faqs">Câu hỏi thường gặp</li>
           <li data-nav="news">Tin tức</li>
         </ul>
@@ -312,6 +312,7 @@
                   <a href="https://khuyenmai.pvcfc.com.vn/" target="_blank">https://khuyenmai.pvcfc.com.vn/</a>
                   để đăng ký tham gia chương trình (miễn phí).
                 </p>
+                <button type="button" class="but bg-red" id="registerBut"><span>Bấm để Đăng Ký</span></button>
               </div>
               <div class="detail-pic">
                 <img width="487" height="510" src="images/step-qr-phone.png" alt="Quét QRcode trên mặt sau phiếu may mắn hoặc
@@ -402,8 +403,8 @@
             <div class="reward-info">
               <div class="reward-title">
                 <div class="reward-number gr__yellow">
-                  <div class="reward-value">1.344</div>
-                  <div class="reward-mask">1.344</div>
+                  <div data-value="1344" class="reward-value by__counter">1.344</div>
+                  <div data-value="1344" class="reward-mask by__counter">1.344</div>
                 </div>
                 <div class="reward-name">
                   CHỈ VÀNG <br /><small>NHẪN 99,99</small>
@@ -427,8 +428,8 @@
             <div class="reward-info">
               <div class="reward-title">
                 <div class="reward-number gr__red">
-                  <div class="reward-value">80.000</div>
-                  <div class="reward-mask">80.000</div>
+                  <div data-value="80000" class="reward-value by__counter">80.000</div>
+                  <div data-value="80000" class="reward-mask by__counter">80.000</div>
                 </div>
                 <div class="reward-name">
                   <small>GIẢI</small> <br />MAY MẮN
@@ -457,7 +458,13 @@
         </div>
         <div class="livestream-box">
           <div class="livestream-video">
-            <img width="1604" height="898" src="images/livestream-main.jpg" alt="livestream" />
+            <video width="320" height="240" muted playsinline="playsinline" controls>
+              <source src="videos/dv-beckham.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="poster-video">
+              <img class="poster" width="1604" height="898" src="images/livestream-main.jpg" alt="VIDEO" />
+            </div>
           </div>
           <div class="livestream-detail">
             <p>
@@ -484,7 +491,13 @@
         </div>
         <div class="livestream-box">
           <div class="livestream-video">
-            <img width="1604" height="898" src="images/livestream-main.jpg" alt="livestream" />
+            <video width="320" height="240" muted playsinline="playsinline" controls>
+              <source src="videos/dv-beckham.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="poster-video">
+              <img class="poster" width="1604" height="898" src="images/livestream-main.jpg" alt="VIDEO" />
+            </div>
           </div>
           <div class="livestream-detail">
             <p>
@@ -646,12 +659,60 @@
                   <span>2023</span>
                 </div>
               </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="calendar-item isGreen">
               <div class="calendar-bg">
                 <div class="calendar-wrap">
                   <p>T11</p>
                   <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -662,12 +723,60 @@
                   <span>2024</span>
                 </div>
               </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="calendar-item isGreen">
               <div class="calendar-bg">
                 <div class="calendar-wrap">
                   <p>T2</p>
                   <span>2024</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -803,12 +912,60 @@
                   <span>2023</span>
                 </div>
               </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="calendar-item isGreen">
               <div class="calendar-bg">
                 <div class="calendar-wrap">
                   <p>T12</p>
                   <span>2023</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -819,12 +976,60 @@
                   <span>2024</span>
                 </div>
               </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="calendar-item isGreen">
               <div class="calendar-bg">
                 <div class="calendar-wrap">
                   <p>T2</p>
                   <span>2024</span>
+                </div>
+              </div>
+              <div class="live">
+                <span class="live-circle"></span>
+                <span class="live-name">Sắp phát sóng</span>
+              </div>
+              <div class="live-gift">
+                <div class="live-gift__bg">
+                  <div class="gift-title">
+                    <div class="gift-value">168</div>
+                    <div class="gift-name">Chỉ vàng</div>
+                  </div>
+                  <div class="gift-detail">
+                    <p><strong>Ngày ...:</strong></p>
+                    <p>
+                      Livestream giải ... với ... chỉ vàng đã tìm được chủ
+                      nhân Tra cứu danh sách trúng thưởng,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                    <p>
+                      Để xem lại chương trình,
+                      <a href="#" target="_blank">xem tại đây.</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -839,8 +1044,8 @@
             <div class="stock-item stock-item__gold">
               <div class="stock-item__title">
                 <div class="stock-item__value">
-                  <div class="stock__value">12,123</div>
-                  <div class="stock__mask">12,123</div>
+                  <div data-value="12123" class="stock__value by__counter">12,123</div>
+                  <div data-value="12123" class="stock__mask by__counter">12,123</div>
                 </div>
                 <div class="stock-item__name">
                   <small>GIẢI</small> <br />VÀNG
@@ -857,7 +1062,7 @@
             <div class="stock-item stock-item__lucky">
               <div class="stock-item__title">
                 <div class="stock-item__value">
-                  <div class="stock__value">80,000</div>
+                  <div data-value="80000" class="stock__value by__counter">80,000</div>
                 </div>
                 <div class="stock-item__name">
                   <small>GIẢI</small> <br />MAY MẮN
@@ -937,20 +1142,20 @@
               </div>
             </div>
             <div class="tab-body">
-              <div class="body-item current" data-tab="gold">
-                <h3>
-                  GIẢI VÀNG – ĐỢT 1 – Ngày … - 168 nhẫn vàng 1 chỉ 99,99.
-                </h3>
-                <ul class="result-list result-list__title">
-                  <li>STT</li>
-                  <li>Mã số may mắn</li>
-                  <li>họ & tên</li>
-                  <li>số điện thoại</li>
-                  <li>khu vực</li>
-                </ul>
-                <div class="swiper result-swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+              <div class="swiper result-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide gold-type">
+                    <h3>
+                      GIẢI VÀNG – ĐỢT 1 – Ngày … - 168 nhẫn vàng 1 chỉ 99,99.
+                    </h3>
+                    <ul class="result-list result-list__title">
+                      <li>STT</li>
+                      <li>Mã số may mắn</li>
+                      <li>họ & tên</li>
+                      <li>số điện thoại</li>
+                      <li>khu vực</li>
+                    </ul>
+                    <div class="result-box">
                       <ul class="result-list">
                         <li>1</li>
                         <li>CM123456</li>
@@ -1000,8 +1205,7 @@
                         <li>0909.552.556</li>
                         <li>Đà Lạt</li>
                       </ul>
-                    </div>
-                    <div class="swiper-slide">
+                      <!--test-->
                       <ul class="result-list">
                         <li>1</li>
                         <li>CM123456</li>
@@ -1051,150 +1255,20 @@
                         <li>0909.552.556</li>
                         <li>Đà Lạt</li>
                       </ul>
-                    </div>
-                    <div class="swiper-slide">
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123456</li>
-                        <li>Nguyễn Văn A</li>
-                        <li>0909.552.550</li>
-                        <li>An Giang</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123457</li>
-                        <li>Nguyễn Văn B</li>
-                        <li>0909.552.551</li>
-                        <li>Đồng Tháp</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123458</li>
-                        <li>Nguyễn Văn C</li>
-                        <li>0909.552.552</li>
-                        <li>Bến Tre</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123459</li>
-                        <li>Nguyễn Văn D</li>
-                        <li>0909.552.553</li>
-                        <li>Cần Thơ</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123460</li>
-                        <li>Nguyễn Văn E</li>
-                        <li>0909.552.554</li>
-                        <li>Tiền Giang</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123461</li>
-                        <li>Nguyễn Văn F</li>
-                        <li>0909.552.555</li>
-                        <li>Lâm Đồng</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123462</li>
-                        <li>Nguyễn Văn G</li>
-                        <li>0909.552.556</li>
-                        <li>Đà Lạt</li>
-                      </ul>
+                      <!--test-->
                     </div>
                   </div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-              <div class="body-item" data-tab="lucky">
-                <h3>
-                  GIẢI MAY MẮN – ĐỢT 2 – Ngày … - 10,000 cước điện thoại nhiều
-                  mệnh giá
-                </h3>
-                <ul class="result-list result-list__title">
-                  <li>STT</li>
-                  <li>Mã số may mắn</li>
-                  <li>số điện thoại</li>
-                </ul>
-                <div class="swiper result-swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123456</li>
-                        <li>0909.552.550</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123457</li>
-                        <li>0909.552.551</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123458</li>
-                        <li>0909.552.552</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123459</li>
-                        <li>0909.552.553</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123460</li>
-                        <li>0909.552.554</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123461</li>
-                        <li>0909.552.555</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123462</li>
-                        <li>0909.552.556</li>
-                      </ul>
-                    </div>
-                    <div class="swiper-slide">
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123456</li>
-                        <li>0909.552.550</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123457</li>
-                        <li>0909.552.551</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123458</li>
-                        <li>0909.552.552</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123459</li>
-                        <li>0909.552.553</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123460</li>
-                        <li>0909.552.554</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123461</li>
-                        <li>0909.552.555</li>
-                      </ul>
-                      <ul class="result-list">
-                        <li>1</li>
-                        <li>CM123462</li>
-                        <li>0909.552.556</li>
-                      </ul>
-                    </div>
-                    <div class="swiper-slide">
+                  <div class="swiper-slide lucky-type">
+                    <h3>
+                      GIẢI MAY MẮN – ĐỢT 2 – Ngày … - 10,000 cước điện thoại nhiều
+                      mệnh giá
+                    </h3>
+                    <ul class="result-list result-list__title">
+                      <li>STT</li>
+                      <li>Mã số may mắn</li>
+                      <li>số điện thoại</li>
+                    </ul>
+                    <div class="result-box">
                       <ul class="result-list">
                         <li>1</li>
                         <li>CM123456</li>
@@ -1233,9 +1307,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
               </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
@@ -1495,7 +1569,7 @@
         <div class="video-block">
           <h2>XEM VIDEO HƯỚNG DẪN <br />THAM GIA CHƯƠNG TRÌNH</h2>
           <div class="video-box">
-            <video width="320" height="240" muted playsinline="playsinline">
+            <video width="320" height="240" muted playsinline="playsinline" controls>
               <source src="videos/dv-beckham.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
