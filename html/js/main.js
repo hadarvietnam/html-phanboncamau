@@ -537,7 +537,7 @@ $(document).on("click", ".to-top", function () {
 });
 
 // Go To Register
-$(document).on("click", "#registerBut", function () {
+$(document).on("click", ".registerBut", function () {
   $("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
@@ -600,6 +600,11 @@ $(document).on("click", ".close-pop, .overlay, .close__popup", function () {
   $('.popup').removeClass('open');
 });
 
+
+//  Toogle menu
+$(document).on("click", ".menu-toggle", function () {
+  $('body').toggleClass('open-menu');
+});
 
 
 window.addEventListener("scroll", function () {
