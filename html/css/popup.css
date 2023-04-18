@@ -104,6 +104,7 @@ input[type=number] {
     background-size: cover;
 }
 
+.popup__message,
 .popup__lost,
 .popup__win {
     display: flex;
@@ -111,41 +112,66 @@ input[type=number] {
     justify-content: center;
 }
 
+.popup__message .popup-inr,
 .popup__lost .popup-inr,
 .popup__win .popup-inr {
-    width: 49.4375%;
+    width: 36.4375%;
+}
+
+.popup__lost .popup-inr,
+.popup__win .popup-inr,
+.popup__message--success .popup-inr {
     background: linear-gradient(109.34deg, rgba(153, 205, 83, 0.2) 0%, rgba(72, 175, 59, 0.2) 19.63%, rgba(20, 156, 44, 0.2) 36.98%, rgba(0, 149, 38, 0.2) 53.92%, rgba(0, 102, 19, 0.2) 76.04%);
     border: 2px solid #A8FF7E;
 }
 
+.popup__message--error .popup-inr {
+    background: linear-gradient(109.34deg, rgba(255, 220, 202, 0.2) 0%, rgba(192, 2, 1, 0.2) 19.63%, rgba(255, 236, 226, 0.2) 36.98%, rgba(192, 2, 1, 0.2) 53.92%, rgba(255, 236, 226, 0.2) 76.04%);
+    border: 2px solid #C00201;
+    
+}
+
+.message h2,
 .message-lucky h2 {
     font-family: 'Lobster';
     font-weight: 400;
-    font-size: 3.645833333333333vw;
+    font-size: 2.645833333333333vw;
     color: #007445;
     margin-bottom: 1.5625vw;
     text-align: center;
 }
 
+.popup__message--error h2 {
+    color: #C00201;
+}
+
 .message-lucky img {
-    width: 41.5625vw;
+    width: 22.5625vw;
     height: auto;
     margin: 0 auto;
     display: block;
+    margin-bottom: 1.1255vw;
+}
+
+.message-lucky img.gift-img {
+    width: 14%;
+    height: auto;
+    margin-bottom: 1.1255vw;
 }
 
 .popup__win h2 {
     color: #FF2300;
 }
 
-.message-lucky p {
-    font-size: 2.1875vw;
+.message-lucky p,
+.message p {
+    font-size: 1.2875vw;
     font-weight: 700;
     text-align: center;
 }
 
 .message-note {
-    font-size: 1.25vw;
+    font-size: 0.9375vw;
     font-weight: 500;
     text-align: center;
     display: block;
@@ -697,34 +723,42 @@ input[type=number] {
     }
 
     .popup__lost .popup-inr,
-    .popup__win .popup-inr {
+    .popup__win .popup-inr,
+    .popup__message .popup-inr {
         width: 91.46666666666667%;
         padding: 10.66666666666667vw 4.266666666666667vw;
         -webkit-border-radius: 6.4vw;
         border-radius: 6.4vw;
     }
 
-    .message-lucky h2 {
+    .message-lucky h2,
+    .message h2 {
         font-size: 6.4vw;
-        margin-bottom: 5.4vw;
+        margin-bottom: 3.4vw;
     }
 
     .popup__win .message-lucky h2 {
-        font-size: 10.66666666666667vw;
+        font-size: 8.66666666666667vw;
     }
 
-    .message-lucky p {
-        font-size: 4.266666666666667vw;
+    .message-lucky p,
+    .message p {
+        font-size: 3.7333vw;
     }
 
     .message-lucky img {
         width: 94%;
-        margin-bottom: 5.933333333333333vw;
+        margin-bottom: 2.933333333333333vw;
+    }
+
+    .message-lucky img.gift-img {
+        width: 26%;
+        margin-bottom: 3.4vw;
     }
 
     .message-note {
-        font-size: 3.733333333333333vw;
-        margin-top: 4.4vw;
+        font-size: 3.375vw;
+        margin-top: 2.4vw;
     }
 
 }
@@ -793,14 +827,20 @@ input[type=number] {
     }
 
     .popup__lost .popup-inr,
-    .popup__win .popup-inr {
-        max-width: 500px;
+    .popup__win .popup-inr,
+    .popup__message .popup-inr {
+        max-width: 460px;
         padding: 30px 20px;
     }
 
-    .message-lucky h2 {
-        font-size: 36px;
-        margin-bottom: 30px;
+    .popup__message .popup-inr {
+        padding: 30px 40px;
+    }
+
+    .message-lucky h2,
+    .message h2 {
+        font-size: 34px;
+        margin-bottom: 20px;
     }
 
     .popup__win .message-lucky h2 {
@@ -808,8 +848,9 @@ input[type=number] {
         margin-bottom: 15px;
     }
 
-    .message-lucky p {
-        font-size: 16px;
+    .message-lucky p,
+    .message p {
+        font-size: 15px;
     }
 
     .message-lucky img {
@@ -817,8 +858,12 @@ input[type=number] {
         margin-bottom: 15px;
     }
 
+    .message-lucky img.gift-img {
+        display: none;
+    }
+
     .message-note {
-        font-size: 14px;
+        font-size: 13px;
         margin-top: 10px;
     }
 

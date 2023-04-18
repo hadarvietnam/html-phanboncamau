@@ -207,43 +207,43 @@ var gifts = [
     id: 1,
     title: 'Áo mưa',
     type: 'gift',
-    img: ''
+    img: 'images/gift-demo.png'
   }, {
     id: 2,
     title: 'Áo thun',
     type: 'gift',
-    img: ''
+    img: 'images/gift-demo.png'
   }, {
     id: 3,
     title: 'Mũ bảo hiểm',
     type: 'gift',
-    img: ''
+    img: 'images/gift-demo.png'
   }, {
     id: 4,
     title: 'Chúc bạn may mắn lần sau',
     type: 'none',
-    img: ''
+    img: 'images/gift-demo.png'
   },
   {
     id: 5,
     title: 'Bình giữ nhiệt',
     type: 'gift',
-    img: ''
+    img: 'images/gift-demo.png'
   }, {
     id: 6,
     title: 'Mũ tai bèo',
     type: 'gift',
-    img: ''
+    img: 'images/gift-demo.png'
   }, {
     id: 7,
     title: 'Samsung A015F',
     type: 'gift',
-    img: ''
+    img: 'images/gift-demo.png'
   }, {
     id: 8,
     title: 'Dù cầm tay',
     type: 'gift',
-    img: ''
+    img: 'images/gift-demo.png'
   }
 ];
 
@@ -256,6 +256,7 @@ function renderGift(gift) {
   $('body').addClass('no-scroll');
   if (gift.type === 'gift') {
     $('#giftName').html(gift.title);
+    $('#giftResult').attr('src', gift.img);
     $('#popWin').addClass('open');
   } else {
     $('#popLost').addClass('open');
@@ -272,7 +273,7 @@ function initGame() {
       isPlaying = true;
 
       var numberWin = Math.floor(Math.random() * 8); // Get form BE
-
+      
       $roulete.spin(numberWin).done(function (gift) {
         renderGift(gift);
       });
@@ -605,6 +606,17 @@ $(document).on("click", ".close-pop, .overlay, .close__popup", function () {
 $(document).on("click", ".menu-toggle", function () {
   $('body').toggleClass('open-menu');
 });
+
+// Submit event
+$(document).on("click", "#btnSubmit", function () {
+  // fake case error and success register
+  $('body').addClass('no-scroll');
+  // Sucess popup
+  $('#popSuccess').addClass('open');
+  // Error popup
+  //$('#popError').addClass('open');
+});
+
 
 
 var timer = 500;

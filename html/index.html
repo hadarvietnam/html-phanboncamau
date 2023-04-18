@@ -183,7 +183,7 @@
               </div>
             </div>
             <div class="buts">
-              <button type="button" disabled class="but" id="btnSubmit">
+              <button type="button" class="but" disabled id="btnSubmit">
                 <span>GỬI THÔNG TIN</span>
               </button>
             </div>
@@ -330,7 +330,7 @@
               <img class="step-img" width="552" height="133" src="images/step-title.png" alt="Bước 4" />
               <img class="step-light step-light--bot" width="417" height="92" src="images/step-light.png" alt="Light" />
             </div>
-            <span>Bước 3</span>
+            <span>Bước 4</span>
           </div>
           <div class="step-brief color-white">
             <p>
@@ -2045,6 +2045,7 @@
   <div class="popup popup__lost" id="popLost">
     <div class="overlay"></div>
     <div class="overlay-pattern"></div>
+    <div class="close-pop"></div>
     <div class="popup-inr">
       <div class="message-lucky">
         <h2>Chúc bà con may mắn lần sau!</h2>
@@ -2058,10 +2059,12 @@
   <div class="popup popup__win" id="popWin">
     <div class="overlay"></div>
     <div class="overlay-pattern"></div>
+    <div class="close-pop"></div>
     <div class="popup-inr">
       <div class="message-lucky">
         <img width="798" height="515" src="images/welcome-gift.png" alt="Chúc mừng trúng thưởng" />
         <h2 id="giftName">Samsung A015F</h2>
+          <img class="gift-img" id="giftResult" width="120" height="244" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Gift" />
         <p>
           Công ty Cổ phần Phân bón Dầu khí Cà Mau sẽ chuyển quà đến địa chỉ bà
           con đã cung cấp trong thời gian sớm nhất
@@ -2085,6 +2088,28 @@
     <div class="close-pop"></div>
     <div class="popup-inr">
       <div class="ajax-load"><!--Load By Ajax--></div>
+    </div>
+  </div>
+
+  <div class="popup popup__message popup__message--error" id="popError">
+    <div class="overlay"></div>
+    <div class="close-pop"></div>
+    <div class="popup-inr">
+      <div class="message message__error">
+        <h2>Đã có lỗi xảy ra</h2>
+        <p>Chúng tôi vô cùng xin lỗi quý khách <br>về sự bất tiện này!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup popup__message popup__message--success" id="popSuccess">
+    <div class="overlay"></div>
+    <div class="close-pop"></div>
+    <div class="popup-inr">
+      <div class="message message__success">
+        <h2>Đăng ký thành công</h2>
+        <p>Tài khoản của bạn đã được đăng ký thành công, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
+      </div>
     </div>
   </div>
 
