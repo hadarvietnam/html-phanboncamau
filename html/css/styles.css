@@ -876,6 +876,8 @@ strong {
   width: 80.88541666666667%;
   display: block;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .calendar-list {
@@ -884,6 +886,10 @@ strong {
   align-items: center;
   margin-bottom: 8.541666666666667vw;
   top: -0.25vw;
+}
+
+.calendar-list:hover {
+  z-index: 2;
 }
 
 .line-gold {
