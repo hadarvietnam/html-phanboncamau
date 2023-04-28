@@ -619,7 +619,7 @@ $(document).on("click", "#btnSubmit", function () {
 
 
 
-var timer = 500;
+var timer = 10;
 let lastMove = Date.now() - timer;
 
 function onScroll() {
@@ -649,6 +649,20 @@ function onScroll() {
       }
 
     });
+
+    [].slice.call(document.querySelectorAll(".section")).forEach(function (elm) {
+      var elmH = $(elm).innerHeight();
+      var eTop = $(elm).offset().top + elmH;
+      if (eTop - top > 300 && eTop - top <= winH + elmH) {
+        var section = $(elm).attr('data-nav');
+        if (section) {
+          $('.nav li').removeClass('nav-active');
+          $('.nav li[data-nav=' + section + ']').addClass('nav-active');
+        }
+      }
+    });
+
+
     lastMove = Date.now();
   }
 }
